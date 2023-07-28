@@ -1,16 +1,21 @@
-import React from "react";
-import { Amplify } from 'aws-amplify'
-import { AmplifyAuthenticator } from "@aws-amplify/ui-react";
-import awsconfig from "./awsconfig";
+import { Amplify } from 'aws-amplify';
+
+import { Authenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+
+import awsconfig from './awsconfig';
 
 Amplify.configure(awsconfig);
 
-export default () => {
+export default function App() {
   return (
-    <AmplifyAuthenticator>
-      <div>
-        ONLY LOGGED IN USERS CAN SEE THIS
-      </div>
-    </AmplifyAuthenticator>
+    <Authenticator>
+      {({ signOut, user }) => (
+        <main>
+          <h1>Hello {user.username}</h1>
+          <button onClick={signOut}>Sign out</button>
+        </main>
+      )}
+    </Authenticator>
   );
-};
+}
