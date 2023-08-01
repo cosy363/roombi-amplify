@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify6188d844fcd34-staging-74252-authRole",
+      "UnauthRoleArn": "arn:aws:iam::599841102598:role/amplify-amplify6188d844fcd34-staging-74252-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::599841102598:role/amplify-amplify6188d844fcd34-staging-74252-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-amplify6188d844fcd34-staging-74252-deployment",
+      "UnauthRoleName": "amplify-amplify6188d844fcd34-staging-74252-unauthRole",
+      "StackName": "amplify-amplify6188d844fcd34-staging-74252",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:599841102598:stack/amplify-amplify6188d844fcd34-staging-74252/5bf7a520-2d1a-11ee-840b-0653e0508468",
+      "AmplifyAppId": "d12y2243eeg2cw"
+    },
+    "categories": {
+      "function": {
+        "roombiLambda": {}
+      }
+    }
+  }
+}
