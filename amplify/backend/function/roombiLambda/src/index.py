@@ -1,15 +1,21 @@
 import json
+import datetime
 
 def handler(event, context):
-  print('received event:')
-  print(event)
-  
-  return {
-      'statusCode': 200,
-      'headers': {
-          'Access-Control-Allow-Headers': '*',
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
-      },
-      'body': json.dumps('Hello from your new Amplify Python lambda!')
+
+  current_time = datetime.datetime.now().time()
+
+  body = {
+      'message': 'Hello, the current time is ' + str(current_time)
   }
+
+  response = {
+      'statusCode': 200,
+      'body': json.dumps(body),
+      'headers': {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      },
+  }
+  
+  return response
