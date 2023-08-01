@@ -21,5 +21,23 @@
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
+  },
+  "parameters": {
+    "AMPLIFY_function_roombiLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "roombiLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_roombiLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "roombiLambda"
+        }
+      ]
+    }
   }
 }

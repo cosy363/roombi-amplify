@@ -13,7 +13,13 @@
     },
     "categories": {
       "function": {
-        "roombiLambda": {}
+        "roombiLambda": {
+          "deploymentBucketName": "amplify-amplify6188d844fcd34-staging-74252-deployment",
+          "s3Key": "amplify-builds/roombiLambda-62566530733532363139-build.zip"
+        }
+      },
+      "api": {
+        "api4fb83ff5": {}
       }
     }
   }
