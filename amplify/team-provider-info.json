@@ -15,7 +15,7 @@
       "function": {
         "roombiLambda": {
           "deploymentBucketName": "amplify-amplify6188d844fcd34-staging-74252-deployment",
-          "s3Key": "amplify-builds/roombiLambda-62566530733532363139-build.zip"
+          "s3Key": "amplify-builds/roombiLambda-67746478637659686d6d-build.zip"
         }
       },
       "api": {

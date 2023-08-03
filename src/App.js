@@ -1,5 +1,7 @@
 import { Amplify } from 'aws-amplify';
-// import { API } from 'aws-amplify';
+import { API } from 'aws-amplify';
+import Box from '@mui/material/Box';
+import Slider from '@mui/material/Slider';
 
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
@@ -29,7 +31,16 @@ export default function App() {
     ]} variation="modal">
       {({ signOut, user }) => (
         <main>
-          <h1>Hello {user.username}</h1>
+          <Box sx={{ width: 300 }}>
+            <Slider
+              aria-label="Always visible"
+              defaultValue={80}
+              getAriaValueText={valuetext}
+              step={10}
+              marks={marks}
+              valueLabelDisplay="on"
+            />
+          </Box>
           <button onClick={signOut}>Sign out</button>
         </main>
       )}

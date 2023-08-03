@@ -8,7 +8,7 @@ export default {
       endpoints: [
         {
           name: "MyAPIGatewayAPI",
-          endpoint: "https://1234567890-abcdefgh.amazonaws.com"
+          endpoint: "https://boqklv3e58.execute-api.ap-northeast-2.amazonaws.com/staging/items"
         }
       ]
     }
