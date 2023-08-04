@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.row{
+  right: 230px;
+  top: 180px;
+  /* y가 수평 스크롤, x가 수직 스크롤임 */
+  overflow-y: visible;
+  overflow-x: visible;
+  position: relative;
+}
