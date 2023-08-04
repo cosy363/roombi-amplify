@@ -273,12 +273,12 @@ export default function Home() {
             Generate
             </Fab>
               
-            <Fab variant="extended" size="medium" color="error" aria-label="add" onClick={() => generate(userinfo,convert_list([소파,의자,옷장,러그,책상,선반,수납장,침대,조명]),convert_list([Black, White, Wood, Red, Green, Blue]),calculateValue(value))}>
+            <Fab variant="extended" size="medium" color="error" aria-label="add" onClick={() => signOut()}>
             <FavoriteIcon sx={{ mr: 1 }} />
             Heartlist
             </Fab>
             
-            <Fab variant="extended" size="medium" color="red" aria-label="add" onClick={() => generate(userinfo,convert_list([소파,의자,옷장,러그,책상,선반,수납장,침대,조명]),convert_list([Black, White, Wood, Red, Green, Blue]),calculateValue(value))}>
+            <Fab variant="extended" size="medium" color="red" aria-label="add" onClick={() => signOut()}>
             Logout
             </Fab>
             
