@@ -1,21 +1,7 @@
 import { Amplify, Auth } from 'aws-amplify';
-import { API } from 'aws-amplify';
-import Box from '@mui/material/Box';
-import Slider from '@mui/material/Slider';
-import Card from '@mui/material/Card';
+
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
-import Checkbox from '@mui/material/Checkbox';
-import FormLabel from '@mui/material/FormLabel';
-import FormControl from '@mui/material/FormControl';
-import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormHelperText from '@mui/material/FormHelperText';
-import Fab from '@mui/material/Fab';
-import BedroomChildIcon from '@mui/icons-material/BedroomChild';
-import roombi from './roombi.png';
+
 import {  BrowserRouter, Route, Routes } from 'react-router-dom' 
 
 import { Authenticator } from '@aws-amplify/ui-react';
