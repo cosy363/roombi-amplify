@@ -87,7 +87,7 @@ export default function Home() {
     function generate(user,fp,cp,money) {
         if(!error1 & !error2){
             
-        axios.post( 'https://roombi-proxy.herokuapp.com/http://43.201.25.85:5000/combination/getcombination', 
+        axios.post( 'https://roombi-proxy-6704c33e2b30.herokuapp.com/http://43.201.25.85:5000/combination/getcombination', 
             { 
             user_id: user, 
             furniture_preference: fp,
