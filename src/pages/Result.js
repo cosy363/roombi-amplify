@@ -43,6 +43,29 @@ export default function Result(){
         return url
     }
 
+    function return_url (d,i,n){
+      var target = d[i]
+      var url = ''
+      switch(n) {
+          case 1:
+              url = target.product_id1.Image_URL;
+              break;
+          case 2:
+              url = target.product_id2.Image_URL;
+              break;
+          case 3:
+              url = target.product_id3.Image_URL;
+              break;
+          case 4:
+              url = target.product_id4.Image_URL;
+              break;  
+          default:
+              url = target.product_id1.Image_URL;
+              break;
+      }
+      return url
+  }
+
     function return_pricesum (d,i){
         var target = d[i]
         
