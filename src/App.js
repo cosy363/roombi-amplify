@@ -31,14 +31,19 @@ Amplify.configure(awsconfig);
 
 export default function App() {
   
+  // 현재 유저의 정보
   const userinfo = Auth.currentUserInfo()
 
 
   return (
+
+    // authenticator로 감싸서 인증 정보가 없으면 안에 내용에 접근을 못하게끔
     <Authenticator signUpAttributes={[
       'email',
     ]} variation="modal">
       {({ signOut, user }) => (
+
+        //여기서부턴 navigator같이 url에 따라서 어디로 갈지 배분해주는거임
         <BrowserRouter>
         
         <Routes>
@@ -47,8 +52,6 @@ export default function App() {
           <Route path="/result" element={<Result />}/>
 
         </Routes>
-
-
 
         </BrowserRouter>
       )}
